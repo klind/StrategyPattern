@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="com.activitylevel.person.Adult" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/person/Adult.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1027" y="149"/>    
+    <position height="-1" width="-1" x="1038" y="-18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="com.activitylevel.person.Senior" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/person/Senior.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="186" x="446" y="209"/>    
+    <position height="-1" width="-1" x="786" y="260"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="com.activitylevel.person.Kid" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/person/Kid.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="170" x="672" y="209"/>    
+    <position height="-1" width="-1" x="1007" y="216"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="com.activitylevel.person.Teenager" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/person/Teenager.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="200" x="882" y="209"/>    
+    <position height="-1" width="-1" x="1040" y="80"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="com.activitylevel.activity.ActivityLevelMedium" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/activity/ActivityLevelMedium.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="83" y="111"/>    
+    <position height="-1" width="-1" x="77" y="7"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="com.activitylevel.activity.ActivityLevelHigh" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/activity/ActivityLevelHigh.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="246" y="113"/>    
+    <position height="-1" width="-1" x="133" y="114"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="com.activitylevel.activity.ActivityLevelLow" project="StrategyPattern" 
     file="/StrategyPattern/src/com/activitylevel/activity/ActivityLevelLow.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="411" y="113"/>    
+    <position height="-1" width="-1" x="295" y="113"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -82,39 +82,65 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <generalization id="10">    
+  <class id="10" language="java" name="com.activitylevel.activity.ActivityLevelNone" project="StrategyPattern" 
+    file="/StrategyPattern/src/com/activitylevel/activity/ActivityLevelNone.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="453" y="114"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.activitylevel.person.Dead" project="StrategyPattern" 
+    file="/StrategyPattern/src/com/activitylevel/person/Dead.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="584" y="260"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="12">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <generalization id="11">    
+  <generalization id="13">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="14">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="12">    
+  <association id="15">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="13" name="activityLevel"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
+      <attribute id="16" name="activityLevel"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="15">    
+  <realization id="18">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="9"/>  
   </realization>  
-  <realization id="16">    
+  <realization id="19">    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="9"/>  
   </realization>  
-  <generalization id="17">    
+  <generalization id="20">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <realization id="18">    
+  <realization id="21">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="9"/>  
   </realization>  
-  <generalization id="19">    
+  <realization id="22">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <generalization id="23">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
